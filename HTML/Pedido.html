@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style>
+            h1{text-align: center;}
+            body{min-height: 100%;}
+            a {text-decoration: none; color: black;}
+            footer{background-color: blanchedalmond; margin-top: 100px; position: relative; clear: both; height: 100px}
+            .center {
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+                    width: 50%;
+                    text-align: center;
+                    }
+            .centertb{margin-left: auto; margin-right: auto; text-size-adjust: 50px;}
+            .right{display:block;text-align: left; padding-left: 50;}
+            .z  {
+                position: absolute;
+                width: 99%;
+                background-color: blanchedalmond;
+                }
+            .y  {
+                position: absolute;
+                left: 45%;
+                background-color: blanchedalmond;
+                }
+                .x  {
+                position: absolute;
+                left: 90%;
+                background-color: blanchedalmond;
+                }
+        </style>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>FrontEnd- HTML</title>
+    </head>
+    <body>
+    <h1><a href="Principal.html">Pasteleria el Bonito</a></h1>
+        <table class="centertb" style="font-size: 150%">
+            <tr>
+                <th><a href="Menu.html">Menu</href></th> 
+                <th><a href="Pedido.html" >Pedidos</href></th>
+            </tr>
+        </table>
+    <h1>Pedido</h1>
+    <hr>
+
+        <form action="/Ordenes.html" id="form1" method="post">
+            <h2>Informacion</h2>
+            <label for="Nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre"><br><br>
+            
+            <label for="numero1">Telefono:&nbsp</label>
+            <input type="number" id="numero1" name="numero1"><br><br>
+        
+            <label for="correo">Correo Electronico:&nbsp</label>
+            <input type="email" id="correo" name="correo"><br><br>
+
+            <h2>Sabor del Pastel</h2>
+            <input type="checkbox" id="sabor1" name="sabor" value="chocolate">
+            <label for="topping1">$50 - Chocolate </label><br>
+            <input type="checkbox" id="sabor2" name="sabor" value="Fresa">
+            <label for="topping2">$50 - Fresa </label><br>
+            <input type="checkbox" id="sabor3" name="sabor" value="Vainilla">
+            <label for="topping3">$50 - Vainilla</label><br>
+            <input type="checkbox" id="sabor4" name="sabor" value="RedVelvet">
+            <label for="topping3">$50 - Red Velvet</label><br><br>
+
+            <h2>Adornos</h2>
+            <input type="checkbox" id="carafeliz" name="adorno" value="carafeliz">
+            <label for="carafeliz">$25 - Cara Feliz</label><br>
+            <input type="checkbox" id="chispas" name="adorno" value="chispas">
+            <label for="chispas">$25 - Chispas de Chocolate</label><br>
+            <input type="checkbox" id="cubierta" name="adorno" value="cubierto">
+            <label for="cubierta">$25 - Cubierta de Chocolate</label><br>
+            <input type="checkbox" id="letras" name="adorno" value="letras">
+            <label for="letras">$25 - Letras</label><br><br>
+
+            <label for="notas">Notas:</label>
+            <input type="text" id="notas" name="notas"><br><br>
+            <label>Para cuando se necesita?</label>
+            <input type="date" id="fecha1" name="fecha1"><br><br>
+            <input type="submit" value="Submit">
+            <input type="reset">
+        </form>
+    </body> 
+    <footer>
+        <div class="z">Direccion <br>
+            Canarias 1032<br>
+            CDMX 00000
+        </div>
+        <div class="y">Horario de Atencion<br>
+            02:00 PM a 6:00PM<br>
+            Todos los dias
+        </div>
+        <div class="x">Telefono<br>
+        55-5533-5533
+        </div>
+    </footer>
+</html>
